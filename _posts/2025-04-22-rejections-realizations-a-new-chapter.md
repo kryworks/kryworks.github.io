@@ -2,7 +2,7 @@
 title: Rejections, Realizations & A New Chapter
 description: Never thought an interview feedback would lead me to finally start something I’ve been wanting to do for years.
 author: kry
-date: 2025-04-15 11:30:00 +0100
+date: 2025-04-22 11:30:00 +0100
 tags: [LearningInPublic,Career]
 pin: true
 image:
