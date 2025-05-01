@@ -1,6 +1,6 @@
 ---
 title: My homelab and what's next?
-description: This is my homelab; part learning space, part therapy, part “am I still good at this?”
+description: This is my homelab; part learning space, part therapy, part “Am I still good at this?”
 author: kry
 date: 2025-05-01 08:40:00 +0100
 tags: [LearningInPublic,Homelab]
