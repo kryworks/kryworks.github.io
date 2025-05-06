@@ -4,7 +4,7 @@ description: Never thought an interview feedback would lead me to finally start 
 author: kry
 date: 2025-04-22 11:30:00 +0100
 tags: [LearningInPublic,Career]
-pin: true
+pin: false
 image:
   path: /assets/img/headers/kryworks_new_chapter.webp
 ---
