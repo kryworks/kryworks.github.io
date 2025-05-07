@@ -23,7 +23,7 @@ Companies might ship pre-built OS dev images or use tools like Ansible to help d
 
 ## Dev Containers
 
-**[Dev Containers](https://containers.dev/)** allow you to define a complete development environment, OS, tools, runtimes, extensions inside a container that can be run locally or remotely. With VS Code and Docker, developers can spin up standardized, reproducible environments without polluting their host system.
+**[Dev Containers](https://containers.dev/)** allows you to define a complete development environment, OS, tools, runtimes, extensions inside a container that can be run locally or remotely. With VS Code and Docker, developers can spin up standardised, reproducible environments without polluting their host system.
 
 ![Desktop View](/assets/img/architecture_dev_containers.png)
 _Developing inside a Container. Image via [Visual Studio Code](https://code.visualstudio.com/docs/devcontainers/containers)_
@@ -59,7 +59,7 @@ I’ve been using Dev Containers for KryWorks Jekyll blog, the one that you ar
 7. Open the editor, apply your changes
 8. Run the site locally: `bundle exec jekyll serve`
 
-**With** a Dev Container, you can skip installation step and you can jump straight to cloning.
+**With** a Dev Container, you can skip the installation step and you can jump straight to cloning.
 
 1. Clone the repository. For example, the [Jekyll Chirpy Theme](https://github.com/cotes2020/jekyll-theme-chirpy), which I’m using and supports Dev Containers.
 2. Open the project in VS Code and run it in a container. Press `Cmd+Shift+P` (or `Ctrl+Shift+P` on Windows) and Select `Dev Containers: Reopen in Container`.
@@ -68,7 +68,7 @@ I’ve been using Dev Containers for KryWorks Jekyll blog, the one that you ar
 > Pro Tip: Use postCreateCommand in your devcontainer.json to automate setup tasks like installing language-specific dependencies (e.g., `npm install`) so environments are fully ready without extra manual steps.
 {: .prompt-tip }
 
-That’s it! No local Ruby or gem setup needed. For a simple static site, this can feel easy, but imagine scaling this to a larger app with multiple dependencies and configuration steps and orders.
+That’s it! No local Ruby or gem setup is needed. This can feel easy for a simple static site, but imagine scaling this to a larger app with multiple dependencies and configuration steps and orders.
 
 ## The Caveats
 
