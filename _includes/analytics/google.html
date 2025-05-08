@@ -1,0 +1,49 @@
+<!-- Cookie Consent & Conditional GA -->
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js"></script>
+<script defer src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google.id }}"></script>
+<script>
+  window.addEventListener('load', function () {
+    window.cookieconsent.initialise({
+      palette: {
+        popup: {
+          background: '#2e2e2e',
+          text: '#ffffff',
+        },
+        button: {
+          background: '#007acc',
+          text: '#ffffff',
+        },
+      },
+      theme: 'edgeless',
+      position: 'top',
+      type: 'opt-in',
+      content: {
+        message: 'This website uses cookies to analyze traffic and improve your experience.',
+        allow: 'Accept',
+        deny: 'Decline',
+        link: 'Privacy Policy',
+        href: '/privacy-policy/',
+      },
+      onInitialise: function (status) {
+        if (this.hasConsented()) {
+          loadAnalytics();
+        }
+      },
+      onStatusChange: function (status) {
+        if (this.hasConsented()) {
+          loadAnalytics();
+        }
+      },
+    });
+
+    function loadAnalytics() {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+      gtag('config', '{{ site.analytics.google.id }}');
+    }
+  });
+</script>
